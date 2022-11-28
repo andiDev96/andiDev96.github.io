@@ -72,13 +72,13 @@ nav {
   color: #222831;
 }
 
-.btn{
-    border: solid 1.5px #222831;
-    padding: 15px;
+.btn {
+  border: solid 1.5px #222831;
+  padding: 15px;
 }
-.btn:hover{
-    color: #eeeeee;
-    background-color: #222831;
+.btn:hover {
+  color: #eeeeee;
+  background-color: #222831;
 }
 main {
   height: 100vh;
@@ -92,11 +92,13 @@ main {
 .container-hero {
   height: 100vh;
   width: 100%;
- 
+
   flex-direction: row;
   justify-content: center;
   align-items: center;
   align-content: center;
+  margin-top: 20px;
+  margin-right: 0;
 }
 .foto-area {
   height: 100vh;
@@ -108,52 +110,52 @@ main {
   background-repeat: no-repeat;
   position: relative;
   filter: blur(3px);
-  
 }
 .text-area {
-    height: 100%;
-    width: 100%;
-    transform: translate(1%, -60%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
-    
+  height: 100%;
+  width: 100%;
+  transform: translate(1%, -87%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+
   text-align: center;
   position: relative;
   align-items: center;
   align-content: center;
-  color:#222831; 
-  
-
-  
-  
+  color: #222831;
 }
-.text-area h1{
-    text-transform: uppercase;
-    font-style: italic;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: 500;
-    text-align: center;
-    margin: 20px;
-    letter-spacing: 2px;
+.text-area h1 {
+  font-size: 90px;
+  text-transform: uppercase;
+  font-style: italic;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 500;
+  text-align: center;
+  margin: 50px;
+  letter-spacing: 2px;
 }
-.text-area h3{
-    font-size: 22px;
-    margin: 20px;
+.text-area h3 {
+  font-size: 60px;
+  margin: 50px;
+  font-weight: 500;
+  text-align: center;
+  font-style: italic;
 }
-.text-area button{
-    margin: 20px;
-    padding: 20px;
-    font-size: 22px;
-    text-transform: uppercase;
-    color: #222831;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    letter-spacing: 3px;
-    border: solid 1px #222831;
-    background-color: transparent;
+.text-area button {
+  margin: 20px;
+  padding: 20px;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #222831;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  letter-spacing: 3px;
+  border: solid 1px #222831;
+  background-color: transparent;
+  padding-left: 20px;
 }
-.text-area button:hover{
-    background-color: #222831;
-    color: #eeeeee;
+.text-area button:hover {
+  background-color: #222831;
+  color: #eeeeee;
 }
