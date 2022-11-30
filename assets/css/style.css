@@ -79,7 +79,6 @@ nav {
 .btn:hover {
   color: #eeeeee;
   background-color: #222831;
- 
 }
 main {
   height: 100vh;
@@ -144,19 +143,301 @@ main {
   text-align: center;
   font-style: italic;
 }
-.text-area button {
-  margin: 20px;
-  padding: 20px;
-  font-size: 22px;
-  text-transform: uppercase;
+
+.btn1 {
+  width: 200px;
+  height: 64px;
   color: #222831;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  letter-spacing: 3px;
-  border: solid 1px #222831;
-  background-color: transparent;
-  padding-left: 20px;
+  background: transparent;
+  font-size: 22px;
+  font-weight: 400m;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.text-area button:hover {
-  background-color: #222831;
-  color: #eeeeee;
+
+.btn1 span {
+  margin-left: 10px;
+  width: 0;
+  overflow: hidden;
+  transition: 0.7s;
 }
+
+.btn1:hover span {
+  width: 30px;
+}
+
+/* MEDIA QUERIS*/
+/* grandezza tv */
+
+@media screen and (max-width: 3840px) {
+  body {
+    height: 2160px;
+    width: 3840px;
+    color: #222831;
+    background-color: #eeeeee;
+  }
+  nav {
+    height: 94px;
+    width: 3840px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center;
+    box-shadow: #222831 5px; */
+  }
+  .left {
+    height: 94px;
+    width: 1920px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+  .right {
+    height: 94px;
+    width: 1920px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    align-content: flex-end;
+    margin-right: 200px;
+  }
+  main {
+    height: 100vh;
+    width: 3840px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  .container-hero {
+    height: 100vh;
+    width: 100%;
+
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 20px;
+    margin-right: 0;
+  }
+
+  .foto-area {
+    height: 100vh;
+    width: 100%;
+    background-image: url("/assets/img/background-nav.jpg");
+    background-color: #222831;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    filter: blur(3px);
+  }
+}
+
+@media screen and (max-width: 1112px) {
+  body {
+    height: 834px;
+    width: 1112px;
+    color: #222831;
+    background-color: #eeeeee;
+  }
+  nav {
+    height: 94px;
+    width: 1112px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+  }
+  .left {
+    height: 94px;
+    width: 557px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: -50px;
+  }
+  .left img {
+    padding-left: -80px;
+    margin-top: 25px;
+    margin-left: -100px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 300px;
+    height: 100px;
+    transform: rotate(8deg);
+  }
+  .right {
+    height: 94px;
+    width: 557px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 200px;
+  }
+  .right ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 200px;
+    padding-left: 100px;
+  }
+  .right ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .right ul li a {
+    font-size: 20px;
+  }
+  .btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 13px;
+    margin-bottom: -15px;
+    margin-right: -70px;
+  }
+
+  main {
+    height: 100vh;
+    width: 1112px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .container-hero {
+    height: 100vh;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 12px;
+    margin-right: 0;
+  }
+  .foto-area{
+    height: 100vh;
+    width: 100%;
+    background-image: url("/assets/img/background-nav.jpg");
+    background-color: #222831;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    filter: blur(3px);
+
+  }
+  .text-area{
+    height: 100%;
+  width: 100%;
+  transform: translate(-5%, -90%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+
+  text-align: center;
+  position: relative;
+  align-items: center;
+  align-content: center;
+  color: #222831;
+
+  }
+  .text-area h1{
+    font-size: 50px;
+    text-transform: uppercase;
+    font-style: italic;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: 500;
+    text-align: center;
+    margin: 50px;
+    letter-spacing: 2px;
+
+  }
+  .text-area h3{
+    font-size: 40px;
+  margin: 20px;
+  font-weight: 500;
+  text-align: center;
+  font-style: italic;
+  }
+  .btn1{
+    width: 200px;
+  height: 64px;
+  color: #222831;
+  background: transparent;
+  font-size: 22px;
+  font-weight: 400m;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: #222831 2px solid;
+  }
+  .btn1:hover{
+    color: #eeeeee;
+    background-color: #222831;
+  }
+
+}
+@media screen and (max-width: 390px){
+  body{
+    height: 844px;
+    width: 390px;
+    color: #222831;
+    background-color: #eeeeee;
+
+  }
+  nav{
+    height: 94px;
+    width: 390px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .left{
+    height: 94px;
+    width: 195px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .left img{
+   
+ 
+  display: flex;
+  width: 90px;
+  height: 900px;
+  transform: rotate(10deg);
+
+  }
+}
+  
+
