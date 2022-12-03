@@ -1,0 +1,79 @@
+nav {
+  height: 94px;
+  width: 1440px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+ 
+}
+.left {
+  width: 720px;
+  height: 94px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.left img {
+  padding: 0 20px 20px 0;
+  margin-top: 2px;
+  display: flex;
+  width: 400px;
+  height: 150px;
+  transform: rotate(10deg);
+}
+.right {
+  display: flex;
+  flex-direction: row;
+  height: 94px;
+  width: 720px;
+  justify-content: flex-end;
+  z-index: 1;
+  padding-top: 0;
+  
+}
+.right ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 94px;
+  width: 720px;
+  justify-content: flex-end;
+}
+.right ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: space-between;
+  margin: 30px;
+}
+.right ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 100;
+  letter-spacing: 2px;
+  font-size: 20px;
+  color: #222831;
+}
+
+.btn {
+  border: solid 1.5px #222831;
+  padding: 15px;
+}
+.btn:hover {
+  color: #eeeeee;
+  background-color: #222831;
+}
+.active {
+  background-color: #00abb3;
+  color: #eeeeee !important; ;
+  border: 1px solid #00abb3;
+  padding: 22px;
+  border-radius: 4px;
+}

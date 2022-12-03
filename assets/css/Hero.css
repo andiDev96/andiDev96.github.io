@@ -1,0 +1,135 @@
+main {
+  height: 100vh;
+  width: 1440px;
+  display: block;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.container-hero {
+  height: 100vh;
+  width: 100%;
+  display: block;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-top: 20px;
+  margin-right: 0;
+  z-index: 1;
+}
+.foto-area {
+  height: 100vh;
+  width: 100%;
+  background-image: url("/assets/img/background-nav.jpg");
+  background-color: #222831;
+  background-position: center;
+  background-size: cover;
+
+  background-repeat: no-repeat;
+  position: relative;
+  filter: blur(3px);
+}
+.text-area {
+  height: 100%;
+  width: 100%;
+  transform: translate(1%, -87%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+
+  text-align: center;
+  position: relative;
+  align-items: center;
+  align-content: center;
+  color: #222831;
+}
+.text-area h1 {
+  font-size: 60px;
+  text-transform: uppercase;
+  font-style: italic;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 500;
+  text-align: center;
+  margin: 50px;
+  letter-spacing: 2px;
+  
+}
+.text-area h3 {
+  font-size: 45px;
+  margin: 50px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-align: center;
+  font-style: italic;
+  color:#00ABB3;
+}
+.text-area p{
+  font-size: 25px;
+  color: gray;
+  letter-spacing: 2px;
+  font-style: italic;
+  font-weight: 500;
+  text-align: center;
+  line-height: 50px;
+  text-transform: lowercase;
+
+}
+
+.btn1 {
+  width: 210px;
+  height: 64px;
+  color: #222831;
+  background: transparent;
+  font-size: 22px;
+  font-weight: 400m;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1.5px #222831;
+}
+.btn1:hover {
+  background-color: #222831;
+  color: #eeeeee;
+}
+
+.btn1 span {
+  margin-left: 10px;
+  width: 0;
+  overflow: hidden;
+  transition: 0.7s;
+}
+
+.btn1:hover span {
+  width: 30px;
+}
+
+.container-main {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to top right, transparent 50%, #b2b2b2 50%);
+  margin-top: 20px;
+}
+.container-text {
+  height: 100%;
+  width: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: flex-start;
+  margin-left: 20em;
+}
+
+.container-text h1 {
+  margin-top: 5em;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: 2px;
+}
