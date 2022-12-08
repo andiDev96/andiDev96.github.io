@@ -9,5 +9,406 @@ body {
   width: 100%;
   color: #222831;
   background-color: #eeeeee;
+  
 }
 
+nav {
+  height: 94px;
+  width: 1440px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.left {
+  width: 720px;
+  height: 94px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.left img {
+  padding: 0 20px 20px 0;
+  margin-top: 2px;
+  display: flex;
+  width: 400px;
+  height: 150px;
+  transform: rotate(10deg);
+}
+
+.right {
+  display: flex;
+  flex-direction: row;
+  height: 94px;
+  width: 720px;
+  justify-content: flex-end;
+  z-index: 1;
+  padding-top: 0;
+
+}
+
+.right ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 94px;
+  width: 720px;
+  justify-content: flex-end;
+}
+
+.right ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: space-between;
+  margin: 30px;
+}
+
+.right ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 100;
+  letter-spacing: 2px;
+  font-size: 20px;
+  color: #222831;
+}
+
+.btn {
+  border: solid 1.5px #222831;
+  padding: 15px;
+}
+
+.btn:hover {
+  color: #eeeeee;
+  background-color: #222831;
+}
+
+.active {
+  background-color: #00abb3;
+  color: #eeeeee !important;
+  ;
+  border: 1px solid #00abb3;
+  padding: 22px;
+  border-radius: 4px;
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+  display: block;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.container-hero {
+  height: 100vh;
+  width: 100%;
+  display: block;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-top: 20px;
+  margin-right: 0;
+  z-index: 1;
+}
+
+.foto-area {
+  height: 100vh;
+  width: 100%;
+  background-image: url("/assets/img/background-nav.jpg");
+  background-color: #222831;
+  background-position: center;
+  background-size: cover;
+
+  background-repeat: no-repeat;
+  position: relative;
+  filter: blur(3px);
+}
+
+.text-area {
+  height: 100%;
+  width: 100%;
+  transform: translate(1%, -87%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+
+  text-align: center;
+  position: relative;
+  align-items: center;
+  align-content: center;
+  color: #222831;
+}
+
+.text-area h1 {
+  font-size: 60px;
+  text-transform: uppercase;
+  font-style: italic;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 500;
+  text-align: center;
+  margin: 50px;
+  letter-spacing: 2px;
+
+}
+
+.text-area h3 {
+  font-size: 45px;
+  margin: 50px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-align: center;
+  font-style: italic;
+  color: #00ABB3;
+}
+
+.text-area p {
+  font-size: 25px;
+  color: gray;
+  letter-spacing: 2px;
+  font-style: italic;
+  font-weight: 500;
+  text-align: center;
+  line-height: 50px;
+  text-transform: lowercase;
+
+}
+
+.btn1 {
+  width: 210px;
+  height: 64px;
+  color: #222831;
+  background: transparent;
+  font-size: 22px;
+  font-weight: 400m;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1.5px #222831;
+}
+
+.btn1:hover {
+  background-color: #222831;
+  color: #eeeeee;
+}
+
+.btn1 span {
+  margin-left: 10px;
+  width: 0;
+  overflow: hidden;
+  transition: 0.7s;
+}
+
+.btn1:hover span {
+  width: 30px;
+}
+
+.container-main {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to top right, transparent 50%, #b2b2b2 50%);
+  margin-top: 20px;
+}
+
+.container-text {
+  height: 100%;
+  width: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: flex-start;
+  margin-left: 20em;
+}
+
+.container-text h1 {
+  margin-top: 5em;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: 2px;
+}
+
+.inner {
+  width: 100%;
+  padding-top: 20px;
+}
+
+.header {
+  text-align: center;
+  color: #3c4048;
+  padding: 2rem;
+  position: relative;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  bottom: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 145px;
+  background-color: #00abb3;
+}
+
+.container-skill {
+  
+  background: linear-gradient(to right, #f48251, #2865f0, #ffda3c);
+  
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  grid-gap: 1rem;
+  padding: 3rem 50px;
+  font-size: 1.2rem;
+}
+
+.skill-box {
+  padding: 3rem;
+  color: #ddd;
+  cursor: pointer;
+}
+
+.skill-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+  margin-bottom: 2rem;
+}
+
+.img {
+  width: 90px;
+  height: 90px;
+  position: relative;
+  border-radius: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-title h3 {
+  color: #3c4048;
+  margin-top: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2.3px;
+}
+
+.skill-icon {
+  width: 90px;
+}
+
+.skill-box p {
+  margin-top: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #eaeaea;
+  font-size: 20px;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+.footer {
+  margin-top: 600px;
+  width: 100%;
+  height: 400px;
+  padding: 100px 15%;
+  background: #3C4048;
+  color: #EAEAEA;
+  display: flex;
+
+}
+
+.footer div {
+  text-align: center;
+}
+
+/* .col-2{
+    flex-grow: 1;
+} */
+.col-1 {
+  flex-grow: 1;
+}
+
+.col-3 {
+  flex-grow: 3;
+}
+
+.footer div h3 {
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  font-family: 'Indie Flower', cursive;
+  ;
+
+}
+
+.col-1 a {
+  font-size: 19px;
+  display: block;
+  color: #EAEAEA;
+  text-decoration: none;
+  margin-bottom: 20px;
+
+}
+
+
+
+.col-2 form button {
+  background-color: transparent;
+  border: solid 1.5px #EAEAEA;
+  color: #EAEAEA;
+  border-radius: 5px;
+  padding: 20px 30px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.social-icons {
+  cursor: pointer;
+}
+.social-icons p{
+  margin: 20px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 200;
+  font-style: italic;
+}
+.social-icons a{
+  color: inherit;
+}
+
+.copy{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 50px;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  font-size: large;
+}
