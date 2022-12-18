@@ -1,7 +1,7 @@
 ## Info Generali
 
 
-In Questo file metterò tutti i documenti importani che mi serviranno per il progetto
+In questo progetto ci sarà tutto la mia conoscenza nello sviluppo Web, grazie anche al Corso insieme allo staff di Start2impact
 
 
 ### CODICE COLORE 
